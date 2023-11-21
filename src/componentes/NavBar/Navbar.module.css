@@ -1,0 +1,35 @@
+.navContainer{
+    height: 80px;
+    width: 100%;
+    background-color: lightgrey;
+    display:flex;
+    align-items:center;
+    margin-bottom:50px;
+}
+.navContainer h1{
+    margin:10px;
+}
+.ulNav{
+    display:flex;
+    margin: 0 auto;
+    width: 50%;
+    justify-content:space-around;
+    list-style:none;
+    text-decoration: none;
+}
+.navLink{
+    text-decoration: none;
+    color:black;
+    
+}
+.ulNav li{
+    font-size:23px;
+    text-decoration: none;
+    color:black;
+    cursor:pointer; 
+    padding:7px;   
+}
+.ulNav li:hover{
+    font-size:25px;
+    font-weight:bold;
+}

@@ -1,0 +1,44 @@
+.contenedorCard{
+    width: 25%;
+    margin:20px;
+    background-color:grey;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:10px;
+    text-align:center;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.contenedorCard img{
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.nombreProducto{
+    margin:20px;
+}
+.botonDetalles{
+    background-color:lightgrey;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:20px;
+    padding:15px;
+    width: 10rem;
+    cursor:pointer;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    text-decoration:none;
+    color:black;
+}
+.precio{
+    margin:30px;
+}
