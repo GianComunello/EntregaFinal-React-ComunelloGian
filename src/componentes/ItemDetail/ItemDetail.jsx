@@ -1,7 +1,25 @@
 import style from "./ItemDetail.module.css"
 import ItemCount from "../ItemCount/ItemCount"
 import { useNavigate } from "react-router-dom"
-export default function ItemDetail({nombre,precio,img,categoria,descripcion}) {
+import { useContext, useState } from "react"
+import { Link } from "react-router-dom"
+import { CartContext } from "../../context/cartContext"
+
+
+export default function ItemDetail({nombre,precio,img,categoria,descripcion,stock,id}) {
+
+  const [cantidadAgregada, setCantidadAgregada]=useState(0)
+  const {agregarItem}=useContext(CartContext)
+
+  const funcionAgregar=(cantidad)=>{
+  setCantidadAgregada(cantidad)
+const item={
+  id,nombre,precio
+}
+agregarItem(item,cantidad)
+  }
+
+
   const navigate= useNavigate()
   return (
     <div className={style.contenedorProducto}>
@@ -19,11 +37,17 @@ export default function ItemDetail({nombre,precio,img,categoria,descripcion}) {
     <h3 className={style.description}>
       Descripcion: {descripcion}
     </h3>
-    <ItemCount
+    {
+      cantidadAgregada > 0 ? (
+        <Link to="/cart" className={style.botonTerminarCompra}>Terminar compra</Link>
+      ):(
+<ItemCount
       initial={1}
-      stock={10}
-      onAdd={(cantidad) => console.log("Cantidad agregada: ", cantidad)}
+      stock={stock}
+      onAdd={funcionAgregar}
     />
+      )
+    }
     <button onClick={() => navigate(`/`)} className={style.botonInicio}>
       Volver al inicio
     </button>

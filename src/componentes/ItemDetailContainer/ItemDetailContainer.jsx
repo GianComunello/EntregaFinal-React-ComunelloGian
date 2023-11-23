@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import style from "./ItemDetailContainer.module.css"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import {getProductById} from "../../../../asyncMock"
 import { useParams } from "react-router-dom"
+import { getProductById } from "../../../asyncMock"
 
 export default function ItemDetailContainer() {
     const [product, setProduct] = useState(null)

@@ -1,5 +1,5 @@
 .contenedorCard{
-    width: 25%;
+    width: 20%;
     margin:20px;
     background-color:grey;
     display:flex;
@@ -29,7 +29,7 @@
     font-weight:bold;
     margin:20px;
     padding:15px;
-    width: 10rem;
+    width: 70%;
     cursor:pointer;
     border-radius:50px;
     -webkit-border-radius:50px;

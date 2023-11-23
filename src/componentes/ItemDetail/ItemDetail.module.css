@@ -1,53 +1,77 @@
-.contenedorProducto{
-    width: 80%;
-    margin: 20px;
-    background-color:grey;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:10px;
-    margin: 30px auto;
-    border-radius:20px;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -ms-border-radius:20px;
-    -o-border-radius:20px;
+.contenedorProducto {
+  width: 80%;
+  margin: 20px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-.contenedorProducto img{
-margin:20px;
-border-radius:20px;
+.contenedorProducto img {
+  margin: 20px;
+  border-radius: 20px;
 }
-.categoriaPrecio{
-width:90%;
-margin:30px;
-display:flex;
-justify-content:space-around;
+.categoriaPrecio {
+  width: 90%;
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.cargar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 100px auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
+.nombreProducto {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
 }
-.cargar{
-height: 150px;
-width:150px;
-border-radius:50%;
-margin:100px auto;
--webkit-border-radius:50%;
--moz-border-radius:50%;
--ms-border-radius:50%;
--o-border-radius:50%;
+.description {
+  margin: 15px;
 }
-
-.nombreProducto{
-font-size:2em;
-text-align:center;
-margin:20px;
+.botonInicio {
+  margin: 20px;
+  background-color: lightgrey;
+  width: 300px;
+  height: 2.5em;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border:2px solid black;
 }
-.description{
-margin:15px;
-}
-.botonInicio{
-margin:20px;
-background-color:lightgrey;
-width: 20em;
-height: 4em;
-cursor:pointer;
-font-weight:bold;
+.botonTerminarCompra {
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+  padding: 12px;
+  width: 9em;
+  margin: 15px;
+  background-color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
 }
