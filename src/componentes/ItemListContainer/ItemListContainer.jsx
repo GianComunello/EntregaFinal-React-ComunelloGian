@@ -11,6 +11,7 @@ export default function ItemListContainer({titulo}) {
   const {categoryId} =useParams()
 
    useEffect(()=>{
+    setCargando(true) 
     const asyncFunc= categoryId ? getProductsByCategory : getProducts
     asyncFunc(categoryId).then(response=>{
       setProducts(response)
@@ -27,9 +28,9 @@ export default function ItemListContainer({titulo}) {
     <h1 className={style.tituloProp}>{titulo}</h1>
     </div>
     {
-      cargando ? <div className={style.cargar}></div> : null      
+      cargando ? <div className={style.cargar}></div> : <ItemList products={products}/>      
     }
-    {<ItemList products={products}/>}
+
     </>
   )
 }

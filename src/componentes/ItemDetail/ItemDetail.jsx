@@ -10,6 +10,7 @@ export default function ItemDetail({nombre,precio,img,categoria,descripcion,stoc
 
   const [cantidadAgregada, setCantidadAgregada]=useState(0)
   const {agregarItem}=useContext(CartContext)
+  const navigate= useNavigate()
 
   const funcionAgregar=(cantidad)=>{
   setCantidadAgregada(cantidad)
@@ -19,8 +20,7 @@ const item={
 agregarItem(item,cantidad)
   }
 
-
-  const navigate= useNavigate()
+  
   return (
     <div className={style.contenedorProducto}>
     <h1 className={style.nombreProducto}>{nombre}</h1>
