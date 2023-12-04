@@ -21,14 +21,39 @@
     color:black;
     
 }
+.ulNav{
+    width: 80%;
+}
 .ulNav li{
     font-size:23px;
     text-decoration: none;
     color:black;
     cursor:pointer; 
     padding:7px;   
+    margin:20px;
 }
 .ulNav li:hover{
     font-size:25px;
     font-weight:bold;
+}
+@media (max-width:880px){
+    .navContainer h1{
+        font-size:1.2em;
+    }
+    .ulNav{
+        width: 80%; 
+    }
+    .ulNav li{
+        font-size:20px; 
+        padding:3px; 
+        margin:10px; 
+    }
+    .ulNav li:hover{
+        font-size:20px;
+    }
+    .navContainer{
+flex-direction:column;
+height: auto;
+padding:5px;
+    }
 }

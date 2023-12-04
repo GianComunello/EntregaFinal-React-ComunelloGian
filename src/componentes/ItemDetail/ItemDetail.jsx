@@ -15,7 +15,7 @@ export default function ItemDetail({nombre,precio,img,categoria,descripcion,stoc
   const funcionAgregar=(cantidad)=>{
   setCantidadAgregada(cantidad)
 const item={
-  id,nombre,precio
+  id,nombre,precio,img,categoria
 }
 agregarItem(item,cantidad)
   }
