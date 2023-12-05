@@ -1,20 +1,12 @@
-import { useContext , useEffect, useState } from "react"
+import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
 import { Link } from "react-router-dom"
 import style from "./Cart.module.css"
-import { getProducts } from "../../../asyncMock"
+
 
 export default function Cart () {
     const {cart, limpiarCarrito, totalCantidad, total, eliminarItem}=useContext(CartContext)
-    const [productos, setProductos] = useState(null)
 
-    useEffect(()=>{
-        getProducts().then(response=>{
-            setProductos(response)
-        }).catch(error=>{
-            console.error(error)
-        })
-    },[])
 
     if(cart.length === 0){
         return(

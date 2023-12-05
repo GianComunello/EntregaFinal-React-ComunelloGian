@@ -5,7 +5,7 @@ export const CartContext = createContext({
 
 export default function CartProvider({children}) {
   const [cart, setCart]=useState([])
-  console.log(cart)
+ 
   const agregarItem = (item,cantidad)=>{
 if(!enCarrito(item.id)){
   setCart(prev=>[...prev, {...item, cantidad}])
@@ -26,7 +26,7 @@ return cart.some(prod=> prod.id===itemId)
 
   return (
     <div>
-        <CartContext.Provider value={{cart, agregarItem, eliminarItem, limpiarCarrito}}>
+        <CartContext.Provider value={{cart, agregarItem, eliminarItem, limpiarCarrito,}}>
           {children}
         </CartContext.Provider>
     </div>
