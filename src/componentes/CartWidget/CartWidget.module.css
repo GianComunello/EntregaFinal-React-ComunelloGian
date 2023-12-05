@@ -9,6 +9,8 @@
     -ms-border-radius:10px;
     -o-border-radius:10px;
     padding:3px;
+    color:black;
+    text-decoration:none;
 }
 .iconoCarrito h2{
 margin:10px;

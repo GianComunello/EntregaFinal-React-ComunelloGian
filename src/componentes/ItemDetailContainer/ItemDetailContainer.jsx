@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import style from "./ItemDetailContainer.module.css"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
-import { getProductById } from "../../../asyncMock"
+import {doc, getDoc} from "firebase/firestore"
+import { db } from "../../firebase/client"
 
 export default function ItemDetailContainer() {
     const [product, setProduct] = useState(null)
@@ -10,13 +11,21 @@ export default function ItemDetailContainer() {
 const {itemId}=useParams()
 
     useEffect(()=>{
-        getProductById(itemId).then(response=>{
-            setProduct(response)
-            setCargando(false) 
-        }).catch(error=>{
-            console.error(error)
-             setCargando(false) 
+        setCargando(true)
+        setTimeout(() => {
+        const docRef= doc(db, "productos", itemId)
+        getDoc(docRef)
+        .then(response =>{
+          const data = response.data()
+          const productAdapted = { id: response.id, ...data}
+          setProduct(productAdapted)
         })
+        .catch(error=>{
+          console.log(error)
+        })
+        .finally(()=>
+        setCargando(false))
+      }, 2000)
     },[itemId])
   return (
     <div className={style.detalleContenedor}>

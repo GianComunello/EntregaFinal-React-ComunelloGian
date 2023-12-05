@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import { CartContext } from "../../context/cartContext"
 
 
-export default function ItemDetail({nombre,precio,img,categoria,descripcion,stock,id}) {
+export default function ItemDetail({nombre,precio,img,categoria,descripcion, stock, id}) {
 
   const [cantidadAgregada, setCantidadAgregada]=useState(0)
   const {agregarItem}=useContext(CartContext)
