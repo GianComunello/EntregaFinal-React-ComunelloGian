@@ -1,4 +1,4 @@
-Mi proyecto esta echo con React + Vite, actualmente es un e-commerce boceto con todo lo visto en el curso que luego se transformara en un e-commerce de libros para el emprendimiento de mi madre.
+Mi proyecto esta echo con React + Vite, actualmente es un e-commerce de electrodomesticos con todo lo visto en el curso.
 
 Este proyecto se basa en una tienda la cual tiene una nav para filtrar productos por categorias y un icono de un carrito que aparecera cuando se agregue productos en el.
 

@@ -12,7 +12,7 @@ export default function CheckoutForm({onConfirm}) {
         }
         onConfirm(userData)
     }
-  return (
+  return ( 
     <div className={style.contenedorForm}>
         <form onSubmit={handleConfirm} className={style.form}>
             <label className={style.label}>
@@ -36,7 +36,7 @@ export default function CheckoutForm({onConfirm}) {
                 value={email}
                 onChange={({target})=> setEmail(target.value)} />
             </label>
-            <div className={style.label}>
+            <div className={style.crearOrden}>
                 <button type='submit' className={style.botonCrearOrden}>Crear orden</button>
             </div>
         </form>

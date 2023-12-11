@@ -13,9 +13,17 @@ if(!enCarrito(item.id)){
   console.error("El producto ya fue agregado")
 }
   }
-  const eliminarItem = (itemId) =>{
+  const eliminarItem = (itemId,cantidad) =>{
+    if(cantidad>1){
+      setCart((prev) =>
+        prev.map((prod) =>
+          prod.id === itemId ? { ...prod, cantidad: prod.cantidad - 1 } : prod
+        )
+      )
+    }else{
     const carritoActualizado = cart.filter(prod=> prod.id !== itemId)
     setCart(carritoActualizado)
+  }
   }
   const limpiarCarrito=()=>{
     setCart([])
@@ -23,10 +31,10 @@ if(!enCarrito(item.id)){
   const enCarrito = (itemId)=>{
 return cart.some(prod=> prod.id===itemId)
   }
-
+  
   return (
     <div>
-        <CartContext.Provider value={{cart, agregarItem, eliminarItem, limpiarCarrito,}}>
+        <CartContext.Provider value={{cart, agregarItem, eliminarItem, limpiarCarrito}}>
           {children}
         </CartContext.Provider>
     </div>

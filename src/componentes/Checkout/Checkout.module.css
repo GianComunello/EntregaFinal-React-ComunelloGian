@@ -1,3 +1,20 @@
+.contenedorCheckout{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+}
+.contenedorCheckout h1{
+    margin:30px;
+    font-size:2.5em;
+}
+.idCompra{
+    font-size:1.5em;
+    margin:20px;
+}
+
+.idCompra strong{
+    color:red;
+}
 .cargar{
     height: 150px;
     width:150px;
@@ -15,5 +32,10 @@
     30%{border-right: 5px solid blue}
     60%{border-bottom: 5px solid blue}
     90%{border-left: 5px solid blue}
-
+}
+@media (max-width:880px) {
+    .idCompra{
+        font-size:0.7em;
+        margin:20px;
+    }
 }

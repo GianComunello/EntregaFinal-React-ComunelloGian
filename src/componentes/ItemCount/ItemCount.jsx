@@ -1,10 +1,10 @@
 import { useState } from "react"
 import style from "./ItemCount.module.css"
 
-export default function ItemCount({stock =10, initial, onAdd}) {
+export default function ItemCount({stock , initial, onAdd}) {
     const [cantidad, setCantidad] = useState(initial)
     function sumar(){
-        if(cantidad < stock){
+        if(cantidad < 10){
             setCantidad(cantidad+1)
         }
     }

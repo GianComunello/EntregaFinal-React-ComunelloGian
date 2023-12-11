@@ -27,7 +27,7 @@
     background-color:lightgrey;
     font-size:1.2em;
     font-weight:bold;
-    margin:20px;
+    margin:10px;
     padding:15px;
     width: 70%;
     cursor:pointer;
@@ -40,5 +40,11 @@
     color:black;
 }
 .precio{
-    margin:30px;
+    margin:20px;
+}
+@media (max-width:880px) {
+.contenedorCard{
+    width: 80%;
+    margin:20px auto;
+}
 }

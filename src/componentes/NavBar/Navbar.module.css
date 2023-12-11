@@ -46,7 +46,7 @@
     .ulNav li{
         font-size:20px; 
         padding:3px; 
-        margin:10px; 
+        margin:5px; 
     }
     .ulNav li:hover{
         font-size:20px;
@@ -55,5 +55,12 @@
 flex-direction:column;
 height: auto;
 padding:5px;
+    }
+}
+@media (max-width:380px){
+    .ulNav{
+        flex-direction:column;
+       align-items:center;
+       margin:10px;
     }
 }

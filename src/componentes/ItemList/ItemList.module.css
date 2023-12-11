@@ -9,3 +9,9 @@
     font-size:2.3em;
     margin:20px;
 }
+@media (max-width:880px){
+    .contenedorItems{
+        width: 100%;
+        flex-direction:column;
+    }
+}

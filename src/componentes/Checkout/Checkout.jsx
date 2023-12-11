@@ -55,10 +55,13 @@ export default function Checkout() {
         return <div className={style.cargar}></div>
     }
     if(ordenId){
-        return <h1>El id de tu compra es {ordenId}</h1>
+        return <>
+        <div className={style.idCompra}> <h1>El id de tu compra es <strong>{ordenId}</strong></h1> </div>
+        </>
     }
   return (
-    <div> <h1>Checkout</h1>
+    <div className={style.contenedorCheckout}> 
+        <h1>Checkout</h1>
     <CheckoutForm onConfirm={crearOrden}/>
     </div>
   )
