@@ -1,9 +1,10 @@
 .contadorContenedor{
 width: 300px;
-margin:10px auto;
+margin:5px auto;
 display:flex;
 flex-direction:column;
 align-items :center;
+
 }
 .contador{
     display:flex;
@@ -30,4 +31,23 @@ align-items :center;
     background-color:blue;  
     font-weight:bold;
     font-size:20px;   
+}
+@media (max-width:700px){
+    .contadorContenedor{
+        width: 300px;
+}
+.boton{
+    width: 3em;
+}
+.botonAgregar{
+    padding:5px;
+    width: 60%;
+    margin:10px; 
+    background-color:blue;  
+    font-weight:bold;
+    font-size:20px;   
+}
+.contadorContenedor{
+    margin:0; 
+}
 }

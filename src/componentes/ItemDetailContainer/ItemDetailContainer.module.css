@@ -3,9 +3,9 @@
     margin: 50px auto; 
     min-height:80vh;
 }
-.detalleContenedor h1{
+.titulo{
     text-align:center;
-    font-size: 3.2em;
+    font-size: 3.5em;
 }
 .cargar{
     height: 150px;
