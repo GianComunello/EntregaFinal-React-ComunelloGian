@@ -1,7 +1,15 @@
 .contenedorCheckout{
     display:flex;
     flex-direction:column;
-    align-items:center; 
+    align-items:center;
+    margin:20px; 
+    min-height:60vh;
+}
+.contenedorCargar{
+    min-height:90vh;
+}
+.contenedorIdCompra{
+    min-height:65vh;
 }
 .contenedorCheckout h1{
     margin:30px;

@@ -52,11 +52,17 @@ export default function Checkout() {
           }
     }
     if(cargando){
-        return <div className={style.cargar}></div>
+        return (
+            <div className={style.contenedorCargar}>
+        <div className={style.cargar}></div>
+        </div>
+        )
     }
     if(ordenId){
         return <>
+        <div className={style.contenedorIdCompra}>
         <div className={style.idCompra}> <h1>El id de tu compra es <strong>{ordenId}</strong></h1> </div>
+        </div>
         </>
     }
   return (
