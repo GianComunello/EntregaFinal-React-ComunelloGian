@@ -25,7 +25,7 @@ const {itemId}=useParams()
         })
         .finally(()=>
         setCargando(false))
-      }, 2000)
+      }, 1000)
     },[itemId])
   return (
     <div className={style.detalleContenedor}>
