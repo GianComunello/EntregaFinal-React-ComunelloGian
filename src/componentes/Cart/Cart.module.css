@@ -96,6 +96,11 @@ box-shadow: -1px 2px 17px 4px rgba(0,0,0,0.75);
     text-align:center;
     margin:30px;
 }
+.noHayItems:hover{
+    -webkit-box-shadow: -1px 2px 17px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 17px 4px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 17px 4px rgba(0,0,0,0.75);
+}
 .volverProductos{
     font-size:1.2em;
     padding:1.5em;
@@ -122,5 +127,17 @@ width:50%;
     }
     .contenedorCartItem h3{
         margin:5px;
+    }
+    .contenedorCartItem{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .botonEliminarDelCarrito{
+        margin-right:0;
+        margin:20px;
+    }
+    .contenedorCartItem h3{
+margin:10px;
     }
 }
