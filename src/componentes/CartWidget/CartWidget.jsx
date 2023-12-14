@@ -1,7 +1,7 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import style from "./CartWidget.module.css"
 import { useContext, useEffect, useState } from 'react';
-import { CartContext } from '../../context/cartContext';
+import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
  
 

@@ -3,7 +3,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import { useNavigate } from "react-router-dom"
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
-import { CartContext } from "../../context/cartContext"
+import { CartContext } from "../../context/CartContext"
 
 
 export default function ItemDetail({nombre,precio,img,categoria,descripcion, stock, id}) {
