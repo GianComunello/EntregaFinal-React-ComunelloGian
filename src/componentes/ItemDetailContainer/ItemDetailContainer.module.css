@@ -1,8 +1,7 @@
 .detalleContenedor{
     width: 90%;
-    margin: 50px auto;
-
- 
+    margin: 50px auto; 
+    min-height:80vh;
 }
 .detalleContenedor h1{
     text-align:center;
