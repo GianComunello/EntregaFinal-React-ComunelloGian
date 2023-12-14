@@ -10,7 +10,7 @@ export default function CartProvider({children}) {
 if(!enCarrito(item.id)){
   setCart(prev=>[...prev, {...item, cantidad}])
 }else{
-  alert("El producto ya fue agregado")
+  alert("El producto ya está en el carrito, si desea agregar mas debe eliminarlo de el.")
 }
   }
   const eliminarItem = (itemId,cantidad) =>{

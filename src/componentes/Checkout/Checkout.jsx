@@ -1,4 +1,5 @@
-import { useContext, useState } from "react"
+import { useContext, useState} from "react"
+import { useNavigate } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
 import { Timestamp, addDoc, collection, documentId, getDocs, query, where, writeBatch} from "firebase/firestore"
 import { db } from "../../firebase/client"
@@ -9,6 +10,7 @@ export default function Checkout() {
     const [cargando, setCargando]=useState(false)
     const [ordenId, setOrdenId]=useState("")
     const {cart, limpiarCarrito} = useContext(CartContext)
+    const navigate= useNavigate()
     const crearOrden = async ({nombre,telefono,email})=>{
         setCargando(true)
         try{
@@ -62,6 +64,9 @@ export default function Checkout() {
         return <>
         <div className={style.contenedorIdCompra}>
         <div className={style.idCompra}> <h1>El id de tu compra es <strong>{ordenId}</strong></h1> </div>
+        <button onClick={() => navigate(`/`)} className={style.botonInicio}>
+      Volver al inicio
+    </button>
         </div>
         </>
     }

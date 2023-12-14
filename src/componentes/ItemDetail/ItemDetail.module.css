@@ -1,5 +1,5 @@
 .contenedorProducto {
-  width: 80%;
+  width: 70%;
   margin: 20px;
   background-color: grey;
   display: flex;
@@ -19,7 +19,7 @@
 }
 .categoriaPrecio {
   width: 90%;
-  margin: 30px;
+  margin: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -37,7 +37,7 @@
 .nombreProducto {
   font-size: 2em;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 .description {
   margin: 15px;
@@ -58,6 +58,11 @@
   -o-border-radius: 20px;
   border:2px solid black;
 }
+.botonInicio:hover{
+  -webkit-box-shadow: -1px 2px 17px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 17px 2px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 17px 2px rgba(0,0,0,0.75);
+}
 .botonTerminarCompra {
   font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
   padding: 12px;
@@ -75,4 +80,8 @@
   color: black;
   text-decoration: none;
   border: 2px solid black;
+}
+.botonTerminarCompra:hover{
+  background-color:red;
+ 
 }
