@@ -10,3 +10,6 @@ El comando para levantar el proyecto es npm run dev
 
 Los productos son sacados de Firebase, la cual cumple la funcion de una base de datos para poder utilizarlo dichos productos de forma dinamica sin necesidad de que este todo el contenido codeado.
 
+El link a la pagina es https://entregafinal-react.vercel.app/.
+
+
