@@ -40,7 +40,7 @@ export default function ItemListContainer({titulo}) {
     <h1 className={style.tituloProp}>{titulo}</h1>
     </div>
     {
-      cargando ? <div className={style.cargar}></div> : <ItemList products={products}/>      
+      cargando ? <div className={style.contenedorCargar}> <div className={style.cargar}></div></div> : <ItemList products={products}/>      
     }
 
     </>

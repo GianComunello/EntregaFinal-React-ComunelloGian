@@ -11,6 +11,9 @@
 
     margin:50px;
 }
+.contenedorCargar{
+    min-height: 100vh;
+}
 .cargar{
     height: 150px;
     width:150px;
